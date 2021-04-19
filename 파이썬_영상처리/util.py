@@ -38,7 +38,6 @@ def show3Image(image1, image2, image3):
     plt.imshow(i3, cmap='gray',vmin=0, vmax= 255, interpolation ='none')
     plt.show(block=True)
 
-
 def showNImage(*imgs):
     n=len(imgs)
     f=plt.figure()

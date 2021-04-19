@@ -6,7 +6,7 @@ def binarization_highlow(image, low, high):
     result[image<low]=0
     # 조건 인덱싱에서 조건의 결합은 각 조건문을 괄호로 감싸고
     # & 이나 | 를 써서 결합함
-    result[(image>=low) & (image>high)]=255
+    result[(image>=low) & (image<high)]=255
     result[image>=high]=0
     return result
 

@@ -13,5 +13,5 @@ if __name__ == '__main__':
     value=int(input('Input Threshold value to binarization : '))
     out=binarization(Image, value)
 
-    showNImage(Image, out)
+    show2Image(Image, out)
     
