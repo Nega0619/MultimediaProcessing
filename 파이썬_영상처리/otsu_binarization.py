@@ -5,7 +5,7 @@ from binarization import *
 
 def otsu_binarization(img):
     #입력 영상의 히스토그램 계산
-    hist=histogram(img)
+    hist=histogram(Image)
     tmp=np.arange(0,256,1)
     #0-255의 임계치 범위에서의 두 그룹의 분산 합을
     #저장함 (초기 값은 무한대로 설정)

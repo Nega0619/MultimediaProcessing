@@ -12,7 +12,7 @@ def gaussianFilter3x3(img):
     mask=np.array([[1,2,1],
                    [2,4,2],
                    [1,2,1]],dtype=np.int)
-    out=mask_op(img, mask)
+    out=mask_op(Image, mask)
     return out
 
 def gaussianMGen(kernlen, nsig=3):
@@ -25,7 +25,7 @@ def gaussianMGen(kernlen, nsig=3):
 
 def gaussianFilter(img, fsize):
     mask=gaussianMGen(fsize)
-    out=mask_op(img, mask)
+    out=mask_op(Image, mask)
     return out
 
 if __name__ == '__main__':
